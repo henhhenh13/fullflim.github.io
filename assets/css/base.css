@@ -1,9 +1,21 @@
 :root {
-
+    --dark-blue: #0C2738;
+    --main-color: #F1B722;
+    --body-color: #081B27;
+    --cyan-color: #3898EC;
+    --white-color: #FFFFFF;
+    --text-color: #899ead;
+    --height-header: 80px;
 }
 
 * {
     box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 html {

@@ -3,7 +3,21 @@
     .hide-on-moblie-tablet {
         display: none;
     }
-}
+
+    .header-head__moblie-btn {
+        display: block;
+    }
+
+    .header-head__list-mobile {
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--body-color);
+        height: 100%;
+        width: 40vw;
+        top: 0;
+        right: 0;
+        margin-top: var(--height-header);
+    }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -12,9 +26,3 @@
     }
 }
 
-/* Moblie */
-@media (max-width: 739px) {
-    .hide-on-moblie {
-        display: none;
-    }
-}
