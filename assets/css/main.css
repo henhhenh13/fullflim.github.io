@@ -2,8 +2,9 @@
     display: block;
     height: var(--height-header);
     background-color: var(--dark-blue);
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100vw;
 }
 
 .header-container {
