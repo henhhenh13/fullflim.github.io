@@ -20,7 +20,24 @@
                         <a href="#" class="header-head__logo">
                             <img src="./assets/img/logo-main.png" alt="" class="header-head__logo__img">
                         </a>
-                        <ul class="header-head__list header-head__list-mobile">
+                        <ul class="header-head__list hide-on-moblie-tablet">
+                            <li class="header-head__list-items__items">
+                                <a href="#" class="header-head__list-items-items__item active">Phim mới</a>
+                            </li>
+                            <li class="header-head__list-items__items">
+                                <a href="#" class="header-head__list-items-items__item">Phim lẻ</a>
+                            </li>
+                            <li class="header-head__list-items__items">
+                                <a href="#" class="header-head__list-items-items__item">Phim bộ</a>
+                            </li>
+                            <li class="header-head__list-items__items">
+                                <a href="#" class="header-head__list-items-items__item">Phim hoạt hình</a>
+                            </li>
+                            <li class="header-head__list-items__items">
+                                <a href="#" class="header-head__list-items-items__item">Phim chiếu rạp</a>
+                            </li>
+                        </ul>
+                        <ul class="header-head__list header-head__list-mobile" id="id-head-nav">
                             <li class="header-head__list-items__items">
                                 <a href="#" class="header-head__list-items-items__item active">Phim mới</a>
                             </li>
@@ -38,15 +55,41 @@
                             </li>
                         </ul>
                         <div class="header-head__moblie-btn">
-                            <i class="fas fa-bars header-head__moblie-btn__bars"></i>
+                            <i class="fas fa-bars header-head__moblie-btn__bars" id="btn-show-menus"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="test"></div>
-        <div class="test"></div>
+        <div class="search">
+            <div class="search--container container">
+                <div class="search__form">
+                    <div class="search__input--inports">
+                        <input type="text" placeholder="Bạn muốn tìm phim gì?" class="search__input search__input--import">
+                        <ul class="inports__list">
+                            <li class="inports__items">
+                                <a class="inports__item inports__item--text">Thiên long bát bộ</a>
+                                <i class=" fas fa-trash-alt inports__item inports__item--trash"></i>
+                            </li>
+                            <li class="inports__items">
+                                <a class="inports__item inports__item--text">Vua hải tặc</a>
+                                <i class=" fas fa-trash-alt inports__item inports__item--trash"></i>
+                            </li>
+                            <li class="inports__items">
+                                <a class="inports__item inports__item--text">Gintama</a>
+                                <i class=" fas fa-trash-alt inports__item inports__item--trash"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="submit" value="Tìm kiếm" class="search__input search__input--btn">
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/main.js"></script>
     
 </body>
 </html>

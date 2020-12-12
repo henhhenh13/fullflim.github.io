@@ -17,15 +17,22 @@
         top: 0;
     }
 
-    .header-head__list-mobile {
+    .header-head__list.header-head__list-mobile {
         position: fixed;
         flex-direction: column;
         background-color: var(--body-color);
-        width: 40vw;
+        width: 50vw;
         height: 100vh;
         top: 0;
         right: 0;
+        transform: translateX(100%);
         margin-top: var(--height-header);
+        display: flex;
+        transition: 0.5s linear;
+    }
+
+    .header-head__list-mobile.show-nav {
+        transform: translateX(0);
     }
 }    
 
@@ -41,6 +48,10 @@
     .hide-on-tablet {
         display: none;
     }
+
+    .search__input--btn {
+        font-size: 1.6rem;
+    }
 }
 
 /* Mobile */
@@ -51,6 +62,10 @@
 
     .header-head__list-mobile {
         width: 60vw;
+    }
+
+    .search__input--btn {
+        font-size: 1.3rem;
     }
 
 

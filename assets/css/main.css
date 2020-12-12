@@ -1,3 +1,7 @@
+body {
+    background-color: var(--body-color);
+}
+
 .header {
     display: block;
     height: var(--height-header);
@@ -37,6 +41,10 @@
     display: flex;
 }
 
+.header-head__list.header-head__list-mobile {
+    display: none;
+}
+
 .header-head__list-items__items {
     margin-right: 30px;
 }
@@ -69,12 +77,114 @@
     cursor: pointer;
 }
 
-.test {
-    width: 100vw;
-    height: 100vh;
+.search {
+    margin-top: var(--height-header);
+    width: 100%;
+    background-color: var(--body-color);
 }
 
+.search--container {
 
+}
 
+.search__form {
+    height: var(--height-header);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.search__input {
+    height: calc(var(--height-header) / 2);
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search__input--inports {
+    flex: 93;
+    position: relative;
+}
+
+.search__input--import {
+    padding: 0 20px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-right: 2px;
+}
+
+.search__input--import:focus {
+    border-color: var(--cyan-color);
+}
+
+.search__input--import:focus ~ .inports__list{
+    display: block;
+}
+
+.inports__list {
+    position: absolute;
+    background-color: var(--white-color);
+    top: 100%;
+    left: 0;
+    width: 40%;    
+    padding: 5px 5px;
+    margin: 0;
+    border-radius: 5px;
+    display: none;
+}
+
+.inports__items {
+    display: flex;
+}
+
+.inports__item {
+    padding: 0 15px;
+    font-size: 1.4rem;
+    background-color: transparent;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.inports__item:hover {
+    background-color: rgb(232, 240, 254);
+    border: 1px solid var(--cyan-color);
+}
+
+.inports__items:hover  .inports__item--trash {
+    opacity: 1;
+}
+
+.inports__item--text {
+    flex: 97;
+}
+
+.inports__item--trash {
+    flex: 3;
+    text-align: center;
+    padding: 0 8px;
+    font-size: 1.6rem;
+    color: rgb(68, 68, 68);
+    border-radius: 3px;
+    opacity: 0;
+}
+
+.inports__item--trash:hover {
+    border-color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.search__input--btn {
+    flex: 7;
+    cursor: pointer;
+    background-color: var(--cyan-color);
+    font-size: 1.8rem;
+    color: var(--white-color);
+    font-weight: 500;
+}
 
 
