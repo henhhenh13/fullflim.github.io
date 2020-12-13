@@ -59,6 +59,10 @@
     .search__input--btn {
         font-size: 1.6rem;
     }
+
+    .inports__list {
+        width: 60%;
+    }
 }
 
 /* Mobile */
@@ -79,6 +83,10 @@
         font-size: 1.3rem;
     }
 
+    .inports__list {
+        width: 90%;
+    } 
+
     .product__header {
         height: 120px;
     }
@@ -94,6 +102,14 @@
 
     .product__item {
         text-align: center;
+    }
+
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-column__list {
+        margin-bottom: 40px;
     }
 
 }

@@ -33,6 +33,7 @@
     box-sizing: inherit;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -47,7 +48,7 @@ html {
 }
 
 .flim-category--title {
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: var(--main-color);
     font-weight: 800;
     text-transform: uppercase;
