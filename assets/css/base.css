@@ -8,6 +8,27 @@
     --height-header: 80px;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--body-color); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #666; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 * {
     box-sizing: inherit;
     text-decoration: none;
@@ -29,6 +50,7 @@ html {
     font-size: 5rem;
     color: var(--main-color);
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .product__img-piont {
@@ -69,7 +91,6 @@ html {
     font-size: 2.2rem;
     color: var(--white-color);
     font-weight: 800;
-    line-height: 1.3;
     text-decoration: underline transparent;
     cursor: pointer; 
     margin-top: 10px;

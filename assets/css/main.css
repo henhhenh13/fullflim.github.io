@@ -133,6 +133,7 @@ body {
     margin: 0;
     border-radius: 5px;
     display: none;
+    z-index: 9;
 }
 
 .inports__items {
@@ -196,6 +197,7 @@ body {
 .product__header {
     display: flex;
     justify-content: space-between;
+    height: var(--height-header);
 
 }
 
@@ -214,6 +216,10 @@ body {
     background-color: var(--white-color);
 }
 
+.date-flim__item.active:hover {
+    color: var(--black-color);
+}
+
 .date-flim__item {
     color: var(--text-color);
     margin-left: 10px;
@@ -230,17 +236,18 @@ body {
     color: var(--white-color);
 }
 
-
 .product__items {
     margin-top: 20px;
     padding-top: 20px;
 }
 
 .product__item {
+    height: 100%;
 }
 
 .product__item--col{
-    margin-bottom: 75px;
+    margin-bottom: 50px;
+    height: 450px;
 }
 
 .product__img-piont-big {
@@ -248,14 +255,24 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    margin-bottom: 20px;
 }
+
+.product__title-line-3 {
+    line-height: 2.6rem;
+    height: 7.6rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
 
 .product__img-piont-big:hover {
     filter: brightness(93%);
 }
 
 .product--item__tag-flim {
-    display: flex;
 }
 
 .product--item__tag--icon {
@@ -274,6 +291,60 @@ body {
 .product--item__tag--text:hover {
     color: var(--white-color);
 }
+
+.product--list {
+
+}
+
+.flim-category--title-small {
+    font-size: 2.5rem;
+    height: var(--height-header);
+    margin: 0;
+    line-height: var(--height-header);
+}
+
+.product--list__items {
+    height: 560px;
+    overflow-y: scroll;
+    padding-top: 40px;
+}
+
+.product--list__item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.product__img-small {
+    width: 65px;
+    height: 80px;
+}
+
+.product__piont-small {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+}
+
+.product--list--ietms__title-star {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.product--list__title-small {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+    height: 5.9rem;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.product__star-small {
+    width: 80px;
+    height: 15px;
+}
+
 
 
 

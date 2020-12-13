@@ -1,5 +1,5 @@
 /* Mobile & Tablet */
-@media (max-width: 1023px) {
+@media (max-width: 1030px) {
     .hide-on-moblie-tablet {
         display: none;
     }
@@ -21,7 +21,7 @@
         position: fixed;
         flex-direction: column;
         background-color: var(--body-color);
-        width: 50vw;
+        width: 30vw;
         height: 100vh;
         top: 0;
         right: 0;
@@ -33,6 +33,13 @@
 
     .header-head__list-mobile.show-nav {
         transform: translateX(0);
+    }
+
+    .product__header {
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
     }
 }    
 
@@ -60,13 +67,33 @@
         display: none;
     }
 
-    .header-head__list-mobile {
+    .header-head__list.header-head__list-mobile {
         width: 60vw;
+    }
+
+    .search__form {
+        padding: 0;
     }
 
     .search__input--btn {
         font-size: 1.3rem;
     }
 
+    .product__header {
+        height: 120px;
+    }
+
+    .flim-category--title {
+        font-size: 2.7rem;
+    }
+
+    .date-flim__item {
+        font-size: 1.2rem;
+        padding: 8px 13px;
+    }
+
+    .product__item {
+        text-align: center;
+    }
 
 }
